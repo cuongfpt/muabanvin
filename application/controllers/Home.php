@@ -8,7 +8,7 @@ class Home extends MY_Controller{
         parent::__construct();
         $this->load->model('news_model');
         $this->load->model('system_model');
-         $this->load->model('Rate_model');
+        
     }
     public function index()
     {
