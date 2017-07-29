@@ -1148,14 +1148,19 @@ ul.menu {
     color: #fff;
     padding: 0 20px;
 }
-.view-portfolio .node-dexp-portfolio .portfolio-image,
-.view-latest-projects .node-dexp-portfolio .portfolio-image {
+.portfolio-image {
     position: relative;
     overflow: hidden;
-    border: 3px solid #CD2323;
+    padding: 10px;
+    background: #fff;
+      -moz-box-shadow: 0 0 10px #555;
+  -webkit-box-shadow: 0 0 10px #555;
+  box-shadow: 0 0 10px #555;
+  
+
 }
-.view-portfolio .node-dexp-portfolio img,
-.view-latest-projects .node-dexp-portfolio img {
+
+.portfolio-image img {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -1272,9 +1277,8 @@ ul.menu {
 }
 .view-portfolio .item-description,
 .view-latest-projects .item-description {
-    background-color: #F8FAFC;
-    border-radius: 0 0 2px 2px;
-    box-shadow: 0 -1px 0 0 rgba(0,0,0,0.1) inset;
+   
+    
     margin-top: -4px;
     padding: 20px 20px 5px;
     text-align: center;
@@ -1377,7 +1381,7 @@ div.dexp_carousel:hover .left span {
     left: 20px;
 }
 .home-featured .item-description {
-    background: #FFF !important;
+ 
 }
 .post {
     padding: 0 0 40px 0;

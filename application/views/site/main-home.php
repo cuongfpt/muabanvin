@@ -54,17 +54,167 @@
                     <div id="block-views-latest-projects-block" class="block block-views main-headline dexp-animate fadeInDownBig animated" data-animate="fadeInDownBig" style="text-align:center">
                         <h3 class="block-title">Dịch vụ của chúng tôi</h3>
                         <p class="sub-block-title">Hãy cùng tham gia</p>
-                       <div class="slider1">
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
-  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div>
-</div>
+                        <div class="content">
+                            <div class="view view-latest-projects view-id-latest_projects view-display-id-block home-featured view-dom-id-d4f63d7083fe3c6ce952c0cbbea2901d">
+                                  <div class="view-content">    
+                                        <div id="latest-projects-block">
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="content">
+                                                        <div class="portfolio-image">
+                                                      <div class="field field-name-field-portfolio-images field-type-image field-label-hidden">
+                                                <div class="field-items">
+                                                <div class="field-item even"><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip"><img typeof="foaf:Image" alt="" src="http://muabanrik.vn/sites/default/files/styles/portfolio/public/icon_add-min.jpg?itok=n473aEpR" width="560" height="400"></a></div>
+                                                </div>
+                                                </div> 
+                                                      <div class="mediaholder"></div>
+                                                      <div class="portfolio-image-zoom">
+                                                        <a href="http://muabanrik.vn/sites/default/files/icon_add-min.jpg" rel="lightbox[portfolio_22]" class="lightbox-processed"><span class="fa fa-search"></span></a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="item-description">
+                                                      <h5><a href="/site2/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-b%C3%A1n-rikvip">Hướng dẫn mua bán RIKVIP</a></h5>
+                                                      <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="rtejustify"><span></span></div></div></div></div></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                             </div>
+                        </div>
+                        </div>
                         </div> 
                  </div>
             </div>
@@ -74,11 +224,12 @@
 </html>
 <script type="text/javascript">
     $(document).ready(function(){
-  $('.slider1').bxSlider({
-    slideWidth: 200,
+  $('#latest-projects-block').bxSlider({
+    slideWidth: 300,
     minSlides: 2,
     maxSlides: 5,
-    slideMargin: 10
+    slideMargin: 10,
+    pager:false
   });
 });
 </script>
