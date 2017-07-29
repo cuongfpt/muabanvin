@@ -4,56 +4,81 @@
 </head>
 
 <body>
-<div id="container">
-    <?php $this->load->view('site/header') ?>
-    <div class="content_home">
-
-        <div class="content">
-            <div class="content_page">
-                <?php $this->load->view($temp, $this->data); ?>
-				<?php $this->load->view('site/right') ?>
+ <?php $this->load->view('site/header') ?>
+     <section class="dexp-section" id="section-features">
+        <div class="container">
+            <div class="row">
+              <div class="region region-feature-first col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div id="block-block-108" class="block block-block">
+                       <h3 class="block-title">FACEBOOK</h3>
+                        <div class="content">
+                            <p class="rtecenter">
+                            <a href="https://www.facebook.com/ngocbg89" target="_blank">
+                            <img alt="" src="public/site/images/fan-page1.png" style="height: 90px; width: 180px;">
+                            </a>
+                            </p>
+                        </div>
+                    </div> 
+            </div>
+            <div class="region region-feature-second col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div id="block-block-109" class="block block-block">
+                          <h3 class="block-title">FB FANPAGE</h3>
+                    <div class="content">
+                        <p>
+                            <a href="https://www.facebook.com/muabanrik.net" target="_blank">
+                                <img alt="" src="public/site/images/fan-page.png" style="width: 180px; height: 90px;">
+                            </a>
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="region region-feature-third col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div id="block-block-110" class="block block-block">
+                      <h3 class="block-title">FB GROUP</h3>
+                        <div class="content">
+                        <p>
+                            <a href="https://www.facebook.com/muabanrik.net" target="_blank">
+                                <img alt="" src="public/site/images/fan-page.png" style="width: 180px; height: 90px;">
+                            </a>
+                        </p>
+                        </div>
+                </div> 
+            </div>
             </div>
         </div>
-
-    </div>
+     </section>
+     <section class="dexp-section bg-light-blue" id="section-features-second">
+        <div class="dexp-container">
+            <div class="row">
+                  <div class="region region-feature-fourth col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="block-views-latest-projects-block" class="block block-views main-headline dexp-animate fadeInDownBig animated" data-animate="fadeInDownBig" style="text-align:center">
+                        <h3 class="block-title">D·ªãch v·ª• c·ªßa ch√∫ng t√¥i</h3>
+                        <p class="sub-block-title">H√£y c√πng tham gia</p>
+                       <div class="slider1">
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div>
 </div>
-<?php $this->load->view('site/footer') ?>
-<div style="position: fixed; bottom: 50px; right: 50px; display: none" type="button" value="Click" id="scrolltop">
-  <img src="../top.png" >
-</div>
-<script language="javascript">
-            function scrolltop() 
-            {
-                var id_button = '#scrolltop';
-
-                // KÈo xu?ng kho?ng c·ch 220px thÏ xu?t hi?n button
-                var offset = 220;
-
-                // TH?i gian di tru?t l‡ 0.5 gi‚y
-                var duration = 500;
-
-                // ThÍm v‡o s? ki?n scroll c?a window, nghia l‡ l˙c tru?t s?
-                // ki?m tra s? ?n hi?n c?a button
-                jQuery(window).scroll(function() {
-                    if (jQuery(this).scrollTop() > offset) {
-                        jQuery(id_button).fadeIn(duration);
-                    } else {
-                        jQuery(id_button).fadeOut(duration);
-                    }
-                });
-
-                // ThÍm s? ki?n click v‡o button d? khi click l‡ tru?t lÍn top
-                jQuery(id_button).click(function(event) {
-                    event.preventDefault();
-                    jQuery('html, body').animate({scrollTop: 0}, duration);
-                    return false;
-                });
-            }
-            
-            // Th?c hi?n
-            $(document).ready(function(){
-                scrolltop();
-            });
-        </script>
+                        </div> 
+                 </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function(){
+  $('.slider1').bxSlider({
+    slideWidth: 200,
+    minSlides: 2,
+    maxSlides: 5,
+    slideMargin: 10
+  });
+});
+</script>
