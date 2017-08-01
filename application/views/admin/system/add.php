@@ -22,40 +22,13 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn google:</label>
-
+                                <label class="col-sm-2 control-label">Đường dẫn facebook group:</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" id="linkgoogle" name="linkgoogle" value="">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn youtube:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linkyoutube" name="linkyoutube" value="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn blog:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linkblog" name="linkblog" value="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn twiter:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linktwiter" name="linktwiter" value="">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">CodeGA:</label>
@@ -65,48 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Liên hệ:</label>
-
-                                <div class="col-sm-8">
-                                    <textarea id="contact" name="contact" rows="20" cols="80">
-                                    </textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Ảnh Login:</label>
-                                <div class="col-sm-3">
-                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
-                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
-                                                class="fileinput-exists">ảnh</span>
-                                         <input type="file" id="images" name="images"><div class="ripple-wrapper"></div></span> <span
-                                            class="fileinput-filename"></span> </div>
-                                    <img id="imageselect" src="../../public/admin/images/no-image.png"
-                                         style="margin-top: 5px;width: 150px">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn login:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linklogin" name="linklogin" value="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Thẻ H1:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="txth1">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">Tiêu đề page:</label>
@@ -134,6 +66,33 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Hotline:</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="Hotline">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Zalo:</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="Zalo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">CSKH:</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="cskh">
+                                </div>
+                            </div>
+                        </div>
 						 <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">Sign:</label>
@@ -144,16 +103,89 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
+                         <div class="form-group">
                             <div class="row">
-                                <label class="col-sm-2 control-label">Hiển thị popup:</label>
+                                <label class="col-sm-2 control-label">Địa chỉ:</label>
                                 <div class="col-sm-8">
-                                     <input type="checkbox" name="ispopup" value="1">
+                                     <textarea id="address" name="address" rows="20" cols="80">
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
-                        
-                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Hướng dẫn giao dịch:</label>
+                                <div class="col-sm-8">
+                                     <textarea id="guidtranfer" name="guidtranfer" rows="20" cols="80">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Ngân hàng:</label>
+                                <div class="col-sm-8">
+                                     <textarea id="bank" name="bank" rows="20" cols="80">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Logo:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
+                                                class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="images" name="images"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                    <img id="imageselect" src="../../public/admin/images/no-image.png"
+                                         style="margin-top: 5px;width: 150px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Banner:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
+                                                class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="imagesbanner" name="imagesbanner"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                    <img id="imageselectbanner" src="../../public/admin/images/no-image.png"
+                                         style="margin-top: 5px;width: 150px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Ảnh giao dịch:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
+                                                class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="imagestranfer" name="imagestranfer"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                    <img id="imageselecttranfer" src="../../public/admin/images/no-image.png"
+                                         style="margin-top: 5px;width: 150px">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Ảnh logo bank:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span>
+                                             <span class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="imageslogobank" name="imageslogobank"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                    <img id="imageselectbank" src="../../public/admin/images/no-image.png"
+                                         style="margin-top: 5px;width: 150px">
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-sm-3">
@@ -172,8 +204,10 @@
     $(function () {
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
-        CKEDITOR.replace('contact');
+        CKEDITOR.replace('guidtranfer');
+        CKEDITOR.replace('address');
 		CKEDITOR.replace('sign');
+        CKEDITOR.replace('bank');
     });
     function readURL(input) {
         if (input.files && input.files[0]) {

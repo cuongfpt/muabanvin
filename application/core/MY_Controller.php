@@ -50,19 +50,23 @@ Class MY_Controller extends CI_Controller
             $this->data['list3'] = $list3;
             foreach($list3 as $item)
             {
-                $this->data['linkface'] = $item->linkface;
-                $this->data['linkgoogle'] = $item->linkgoogle;
-                $this->data['linktwiter'] = $item->linktwiter;
-                $this->data['linkyoutube'] = $item->linkyoutube;
-                $this->data['linkblog'] = $item->linkblog;
-                $this->data['linklogin'] = $item->linklogin;
-                $this->data['images'] = $item->images;
-                $this->data['contact'] = $item->contact;
                 $this->data['codeGA'] = $item->codeGA;
-                $this->data['h1'] = $item->h1;
+                $this->data['titlePage'] = $item->titlePage;
+                $this->data['keyword'] = $item->keyword;
+                $this->data['metaDescription'] = $item->metaDescription;
+                $this->data['linkfacegroup'] = $item->linkfacegroup;
+                $this->data['imageTranfer'] = $item->imageTranfer;
+                $this->data['bannerHome'] = $item->bannerHome;
+                $this->data['Address'] = $item->Address;
+                $this->data['Bank'] = $item->Bank;
+                $this->data['hotline'] = $item->hotline;    
+                $this->data['logo'] = $item->logo;  
+                $this->data['sologant'] = $item->sologant;  
+                $this->data['logobank'] = $item->logobank;  
+                $this->data['CSKH'] = $item->CSKH;  
+                $this->data['ZaloZalo'] = $item->Zalo;
 				$this->data['sign'] = $item->sign;
-                $this->data['popup'] = $item->ispopup;
-                $this->data['linkpopup'] = $item->linkpopup;
+               
             }
             break;
             }
