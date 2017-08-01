@@ -22,99 +22,23 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn google:</label>
-
+                                <label class="col-sm-2 control-label">Đường dẫn facebook group:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linkgoogle" name="linkgoogle" value="<?php echo $info->linkgoogle?>">
+                                    <input type="text" class="form-control" id="linkfacegroup" name="linkfacegroup" value="<?php echo $info->linkfacegroup?>">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn youtube:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linkyoutube" name="linkyoutube" value="<?php echo $info->linkyoutube?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn blog:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linkblog" name="linkblog" value="<?php echo $info->linkblog?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn twiter:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linktwiter" name="linktwiter" value="<?php echo $info->linktwiter?>">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">CodeGA:</label>
 
                                 <div class="col-sm-8">
-                                    <textarea cols="175" rows="15" id="codeGa" name="codeGa" ><?php echo $info->codeGA ?></textarea>
+                                   <textarea cols="175" rows="15" id="codeGa" name="codeGa" value="<?php echo $info->codeGA?>"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Liên hệ:</label>
-
-                                <div class="col-sm-8">
-                                    <textarea id="contact" name="contact" rows="20" cols="80">
-                                        <?php echo $info->contact ?>
-                                    </textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Ảnh Login:</label>
-                                <div class="col-sm-3">
-                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
-                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
-                                                class="fileinput-exists">ảnh</span>
-                                         <input type="file" id="images" name="images"><div class="ripple-wrapper"></div></span> <span
-                                            class="fileinput-filename"></span> </div>
-                                    <?php if ($info->images != null): ?>
-                                        <img id="imageselect"
-                                             src="<?php echo public_url("uploads/adv/" . $info->images) ?>"
-                                             style="margin-top: 5px;width: 150px">
-                                    <?php else: ?>
-                                        <img id="imageselect" src="../../public/admin/images/no-image.png"
-                                             style="margin-top: 5px;width: 150px">
-                                    <?php endif; ?>
-                                    <input type="hidden" name="imagevalue" value="<?php echo $info->images ?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn login:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linklogin" name="linklogin" value="<?php echo $info->linklogin ?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Thẻ H1:</label>
-
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="txth1" value="<?php echo $info->h1?>">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">Tiêu đề page:</label>
@@ -129,7 +53,7 @@
                                 <label class="col-sm-2 control-label">Keyword:</label>
 
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="keyword" value="<?php echo $info->keyword ?>">
+                                    <input type="text" class="form-control" name="keyword" value="<?php echo $info->keyword?>">
                                 </div>
                             </div>
                         </div>
@@ -142,40 +66,166 @@
                                 </div>
                             </div>
                         </div>
-						 <div class="form-group">
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Hotline:</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="Hotline" value="<?php echo $info->hotline?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Zalo:</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="Zalo" value="<?php echo $info->Zalo?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">CSKH:</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="cskh" value="<?php echo $info->CSKH?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">Sign:</label>
 
                                 <div class="col-sm-8">
-                                     <textarea id="sign" name="sign" rows="20" cols="80"><?php echo $info->sign?>
+                                     <textarea id="sign" name="sign" rows="20" cols="80"><?php echo $info->sign ?>
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Địa chỉ:</label>
+                                <div class="col-sm-8">
+                                     <textarea id="address" name="address" rows="20" cols="80"><?php echo $info->Address ?>
                                     </textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <label class="col-sm-2 control-label">Hiển thị popup:</label>
+                                <label class="col-sm-2 control-label">Hướng dẫn giao dịch:</label>
                                 <div class="col-sm-8">
-                                     <?php if ($info->ispopup == 1): ?>
-                                            <input type="checkbox" name="ispopup" checked>
-                                        <?php else : ?>
-                                            <input type="checkbox" name="ispopup" value="1">
-                                        <?php endif; ?>
+                                     <textarea id="guidtranfer" name="guidtranfer" rows="20" cols="80"><?php echo $info->guidTranfer ?>
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <label class="col-sm-2 control-label">Đường dẫn popup:</label>
+                                <label class="col-sm-2 control-label">sologant:</label>
                                 <div class="col-sm-8">
-                                     <input type="text" class="form-control" name="linkpopup" value="<?php echo $info->linkpopup ?>">
+                                    <input type="text" class="form-control" name="sologant" value="<?php echo $info->sologant ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Ngân hàng:</label>
+                                <div class="col-sm-8">
+                                     <textarea id="bank" name="bank" rows="20" cols="80"><?php echo $info->Bank ?>
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Logo:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
+                                                class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="images" name="images"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                         <?php if ($info->logo != null): ?>
+                                            <img id="imageselect"
+                                                 src="<?php echo public_url("uploads/adv/" . $info->logo) ?>"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php else: ?>
+                                            <img id="imageselect" src="../../public/admin/images/no-image.png"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php endif; ?>
+                                        <input type="hidden" name="imagevalue" value="<?php echo $info->logo ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Banner:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
+                                                class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="imagesbanner" name="imagesbanner"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                    <?php if ($info->bannerHome != null): ?>
+                                            <img id="imageselectbanner"
+                                                 src="<?php echo public_url("uploads/adv/" . $info->bannerHome) ?>"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php else: ?>
+                                            <img id="imageselectbanner" src="../../public/admin/images/no-image.png"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php endif; ?>
+                                        <input type="hidden" name="imagebannervalue" value="<?php echo $info->bannerHome ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Ảnh giao dịch:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span> <span
+                                                class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="imagestranfer" name="imagestranfer"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                        <?php if ($info->imageTranfer != null): ?>
+                                            <img id="imageselecttranfer"
+                                                 src="<?php echo public_url("uploads/adv/" . $info->imageTranfer) ?>"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php else: ?>
+                                            <img id="imageselecttranfer" src="../../public/admin/images/no-image.png"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php endif; ?>
+                                        <input type="hidden" name="imagetranfervalue" value="<?php echo $info->imageTranfer ?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Ảnh logo bank:</label>
+                                <div class="col-sm-3">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput"><span
+                                            class="btn btn-primary btn-file"><span class="fileinput-new">Chọn file </span>
+                                             <span class="fileinput-exists">ảnh</span>
+                                         <input type="file" id="imageslogobank" name="imageslogobank"><div class="ripple-wrapper"></div></span> <span
+                                            class="fileinput-filename"></span> </div>
+                                   <?php if ($info->logobank != null): ?>
+                                            <img id="imageselectbank"
+                                                 src="<?php echo public_url("uploads/adv/" . $info->logobank) ?>"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php else: ?>
+                                            <img id="imageselectbank" src="../../public/admin/images/no-image.png"
+                                                 style="margin-top: 5px;width: 150px">
+                                        <?php endif; ?>
+                                        <input type="hidden" name="imagebankvalue" value="<?php echo $info->logobank ?>">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-sm-3">
-                                    <input type="submit" value="Cập nhật" name="addnews"
+                                    <input type="submit" value="Cập nhật" name="updatenews"
                                            class="btn btn-primary pull-right">
                                 </div>
                             </div>
@@ -190,8 +240,10 @@
     $(function () {
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
-        CKEDITOR.replace('contact');
-		CKEDITOR.replace('sign');
+       CKEDITOR.replace('guidtranfer');
+        CKEDITOR.replace('address');
+        CKEDITOR.replace('sign');
+        CKEDITOR.replace('bank');
     });
     function readURL(input) {
         if (input.files && input.files[0]) {

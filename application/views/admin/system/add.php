@@ -24,7 +24,7 @@
                             <div class="row">
                                 <label class="col-sm-2 control-label">Đường dẫn facebook group:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="linkgoogle" name="linkgoogle" value="">
+                                    <input type="text" class="form-control" id="linkfacegroup" name="linkfacegroup" value="">
                                 </div>
                             </div>
                         </div>
@@ -123,6 +123,14 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
+                                <label class="col-sm-2 control-label">sologant:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="sologant">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
                                 <label class="col-sm-2 control-label">Ngân hàng:</label>
                                 <div class="col-sm-8">
                                      <textarea id="bank" name="bank" rows="20" cols="80">
@@ -209,16 +217,26 @@
 		CKEDITOR.replace('sign');
         CKEDITOR.replace('bank');
     });
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                $('#imageselect').attr('src', e.target.result);
-            }
-            reader.readAsDataURL(input.files[0]);
-        }
+   function readURL(input,id) {
+if (input.files && input.files[0])
+ {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        $(id).attr('src', e.target.result);
     }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
     $("#images").change(function () {
-        readURL(this);
+        readURL(this,"#imageselect");
+    });
+    $("#imagesbanner").change(function () {
+        readURL(this,"#imageselectbanner");
+    });
+    $("#imagestranfer").change(function () {
+        readURL(this,"#imageselecttranfer");
+    });
+    $("#imageslogobank").change(function () {
+        readURL(this,"#imageselectbank");
     });
 </script>

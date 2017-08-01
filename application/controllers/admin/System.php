@@ -21,8 +21,15 @@ Class System extends MY_Controller
 
         if (isset($_POST['addnews'])) {
             $file_name = $_FILES['images']['name'];
+            $file_name_banner = $_FILES['imagesbanner']['name'];
+            $file_name_tranfer = $_FILES['imagestranfer']['name'];
+            $file_name_logobank = $_FILES['imageslogobank']['name'];
+
             $file_size = $_FILES['images']['size'];
             $file_tmp = $_FILES['images']['tmp_name'];
+            $file_tmp_banner = $_FILES['imagesbanner']['tmp_name'];
+            $file_tmp_tranfer = $_FILES['imagestranfer']['tmp_name'];
+            $file_tmp_logobank = $_FILES['imageslogobank']['tmp_name'];
             $file_ext = strtolower(end(explode('.', $_FILES['images']['name'])));
             $expensions = array("jpeg", "jpg", "png");
             if (in_array($file_ext, $expensions) === false) {
@@ -33,25 +40,30 @@ Class System extends MY_Controller
             }
             if (empty($errors) == true) {
                 move_uploaded_file($file_tmp, "public/uploads/adv/" . $file_name);
+                move_uploaded_file($file_tmp_banner, "public/uploads/adv/" . $file_name_banner);
+                move_uploaded_file($file_tmp_tranfer, "public/uploads/adv/" . $file_name_tranfer);
+                move_uploaded_file($file_tmp_logobank, "public/uploads/adv/" . $file_name_logobank);
             }
             $data = array(
                 'linkface' => $this->input->post('linkface'),
-                'linkgoogle' => $this->input->post('linkgoogle'),
-                'linkyoutube' => $this->input->post('linkyoutube'),
-                'linkblog' => $this->input->post('linkblog'),
-                'linktwiter' => $this->input->post('linktwiter'),
                 'codeGA' => $this->input->post('codeGa'),
                 'titlePage' => $this->input->post('titlepage'),
                 'keyword' => $this->input->post('keyword'),
-                'metadescription'=> $this->input->post('metadesc'),
-                'contact'=> $this->input->post('contact'),
-                'h1' => $this->input->post('txth1'),
-                'images'=>$_FILES["images"]["name"],
-                'linklogin' => $this->input->post('linklogin'),
-		         'sign' => $this->input->post('sign'),
-                 'ispopup' => $this->input->post('ispopup'),
-                 'linkpopup' => $this->input->post('linkpopup'),
-
+                'metaDescription' => $this->input->post('metadesc'),
+                'linkfacegroup' => $this->input->post('linkfacegroup'),
+                'guidTranfer' => $this->input->post('guidtranfer'),
+                'imageTranfer' => $file_name_tranfer,
+                'bannerHome' =>  $file_name_banner,
+                'Address' => $this->input->post('address'),
+                'Bank' => $this->input->post('bank'),
+                'hotline' => $this->input->post('Hotline'),
+                'logo' => $file_name,
+                'sologant' => $this->input->post('sologant'),
+                'logobank' => $file_name_logobank,
+                'CSKH' => $this->input->post('cskh'),
+                'Zalo' => $this->input->post('Zalo'),
+                 'sign' => $this->input->post('sign'),
+                
             );
             if ($this->system_model->create($data)) {
                 //tạo ra nội dung thông báo
@@ -66,15 +78,22 @@ Class System extends MY_Controller
         $this->data['temp'] = 'admin/system/add';
         $this->load->view('admin/main', $this->data);
     }
-    function edit(){
+    function edit()
+    {
         $id = $this->uri->rsegment('3');
         $id = intval($id);
         $info = $this->system_model->get_info($id);
         $this->data['info'] = $info;
-        if (isset($_POST['addnews'])) {
-            $file_name = $_FILES['images']['name'];
+        if (isset($_POST['updatenews'])) {
+             $file_name = $_FILES['images']['name'];
+            $file_name_banner = $_FILES['imagesbanner']['name'];
+            $file_name_tranfer = $_FILES['imagestranfer']['name'];
+            $file_name_logobank = $_FILES['imageslogobank']['name'];
             $file_size = $_FILES['images']['size'];
             $file_tmp = $_FILES['images']['tmp_name'];
+            $file_tmp_banner = $_FILES['imagesbanner']['tmp_name'];
+            $file_tmp_tranfer = $_FILES['imagestranfer']['tmp_name'];
+            $file_tmp_logobank = $_FILES['imageslogobank']['tmp_name'];
             $file_ext = strtolower(end(explode('.', $_FILES['images']['name'])));
             $expensions = array("jpeg", "jpg", "png");
             if (in_array($file_ext, $expensions) === false) {
@@ -84,26 +103,50 @@ Class System extends MY_Controller
                 $this->session->set_flashdata('message', 'Kích cỡ file nên là 2 MB');
             }
             if ($_FILES['images']['name'] != "") {
+                        $logo =  array('logo' => $_FILES['images']['name']);
+                       }
+                else{
+                        $logo= array('logo' => $this->input->post('imagevalue'));
+                    }
+                if ($_FILES['imagesbanner']['name'] != "") {
+                        $bannerHome = array('bannerHome' => $_FILES['imagesbanner']['name']);
+                       }
+                else{
+                        $bannerHome = array('bannerHome' => $this->input->post('imagebannervalue'));
+                       }
+                if ($_FILES['imagestranfer']['name'] != "") {
+                        $imageTranfer = array('imageTranfer' =>  $_FILES['imagestranfer']['name']);
+                       }
+                else{
+                          $imageTranfer = array('imageTranfer' => $this->input->post('imagetranfervalue'));
+                       }
+                     
+                if ($_FILES['imageslogobank']['name'] != "") {
+                        $logobank = array('logobank' =>  $_FILES['imageslogobank']['name']);
+                       }
+                else{
+                         $logobank = array('logobank' => $this->input->post('imagebankvalue'));
+                       }
+         
                 $data = array(
                     'linkface' => $this->input->post('linkface'),
-                    'linkgoogle' => $this->input->post('linkgoogle'),
-                    'linkyoutube' => $this->input->post('linkyoutube'),
-                    'linkblog' => $this->input->post('linkblog'),
-                    'linktwiter' => $this->input->post('linktwiter'),
                     'codeGA' => $this->input->post('codeGa'),
                     'titlePage' => $this->input->post('titlepage'),
                     'keyword' => $this->input->post('keyword'),
-                    'metadescription' => $this->input->post('metadesc'),
-                    'contact' => $this->input->post('contact'),
-                    'h1' => $this->input->post('txth1'),
-                    'linklogin' => $this->input->post('linklogin'),
-                    'images' => $_FILES['images']['name'],
-        		    'sign' => $this->input->post('sign'),
-                     'ispopup' => $this->input->post('ispopup'),
-                 'linkpopup' => $this->input->post('linkpopup'),
+                    'metaDescription' => $this->input->post('metadesc'),
+                    'linkfacegroup' => $this->input->post('linkfacegroup'),
+                    'guidTranfer' => $this->input->post('guidtranfer'),
+                    'Address' => $this->input->post('address'),
+                    'Bank' => $this->input->post('bank'),
+                    'hotline' => $this->input->post('Hotline'),
+                    'sologant' => $this->input->post('sologant'),
+                    'CSKH' => $this->input->post('cskh'),
+                    'Zalo' => $this->input->post('Zalo'),
+                    'sign' => $this->input->post('sign'),
                 );
+                $data1=array_merge($data,$logo, $bannerHome, $imageTranfer,$logobank);
                 move_uploaded_file($file_tmp, "public/uploads/adv/" . $file_name);
-                if ($this->system_model->update($id, $data)) {
+                if ($this->system_model->update($id, $data1)) {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', '<label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Cập nhật thành công</label>');
                     redirect(admin_url('system'));
@@ -111,35 +154,6 @@ Class System extends MY_Controller
                     $this->session->set_flashdata('message', 'Cập nhật không thành công');
                 }
             }
-            else{
-                $data = array(
-                    'linkface' => $this->input->post('linkface'),
-                    'linkgoogle' => $this->input->post('linkgoogle'),
-                    'linkyoutube' => $this->input->post('linkyoutube'),
-                    'linkblog' => $this->input->post('linkblog'),
-                    'linktwiter' => $this->input->post('linktwiter'),
-                    'codeGA' => $this->input->post('codeGa'),
-                    'titlePage' => $this->input->post('titlepage'),
-                    'keyword' => $this->input->post('keyword'),
-                    'metadescription' => $this->input->post('metadesc'),
-                    'contact' => $this->input->post('contact'),
-                    'h1' => $this->input->post('txth1'),
-                    'linklogin' => $this->input->post('linklogin'),
-                    'images' => $this->input->post('imagevalue'),
- 	             'sign' => $this->input->post('sign'),
-                   'ispopup' => $this->input->post('ispopup'),
-                 'linkpopup' => $this->input->post('linkpopup'),
-                );
-
-                if ($this->system_model->update($id, $data)) {
-                    //tạo ra nội dung thông báo
-                    $this->session->set_flashdata('message', '<label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Cập nhật thành công</label>');
-                    redirect(admin_url('system'));
-                } else {
-                    $this->session->set_flashdata('message', 'Cập nhật không thành công');
-                }
-            }
-        }
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         $this->data['temp'] = 'admin/system/edit';
