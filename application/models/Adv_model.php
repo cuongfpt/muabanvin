@@ -16,7 +16,6 @@ Class Adv_model extends MY_Model
     }
     function get_adv_right(){
         $this->db->where('position',1);
-        $this->db->where('status',1);
         $this->db->order_by('orderNo','ASC');
         $query = $this->db->get($this->table);
 

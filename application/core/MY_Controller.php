@@ -35,12 +35,15 @@ Class MY_Controller extends CI_Controller
             $this->data['userinfo'] = $userinfo;
             $this->load->helper('news_helper');
             $this->load->model('category_model');
+             $this->load->model('news_model');
             $this->load->model('adv_model');
             $this->load->model('system_model');
             $list = $this->get_list_category();
             $this->data['menu_list'] = $list;
             $listfooter = $this->get_list_category_footer();
             $this->data['listfooter'] = $listfooter;
+            $listnewshome=$this->news_model->get_list_news_home();
+            $this->data['listnewshome'] = $listnewshome;
             //quảng cáo left
             $list1 = $this->adv_model->get_adv_left();
             $this->data['list1'] = $list1;
@@ -50,8 +53,10 @@ Class MY_Controller extends CI_Controller
             $this->data['list3'] = $list3;
             foreach($list3 as $item)
             {
+                  $this->data['linkface'] = $item->linkface;
                 $this->data['codeGA'] = $item->codeGA;
                 $this->data['titlePage'] = $item->titlePage;
+                 $this->data['guidTranfer'] = $item->guidTranfer;
                 $this->data['keyword'] = $item->keyword;
                 $this->data['metaDescription'] = $item->metaDescription;
                 $this->data['linkfacegroup'] = $item->linkfacegroup;
@@ -64,9 +69,13 @@ Class MY_Controller extends CI_Controller
                 $this->data['sologant'] = $item->sologant;  
                 $this->data['logobank'] = $item->logobank;  
                 $this->data['CSKH'] = $item->CSKH;  
-                $this->data['ZaloZalo'] = $item->Zalo;
+                $this->data['Zalo'] = $item->Zalo;
 				$this->data['sign'] = $item->sign;
-               
+               $this->data['AddressTranfer'] = $item->AddressTranfer;
+               $this->data['titleDaily'] = $item->titleDaily;
+               $this->data['daily'] = $item->Daily;
+               $this->data['map'] = $item->Map;
+               $this->data['email'] = $item->Email;
             }
             break;
             }
@@ -172,112 +181,37 @@ Class MY_Controller extends CI_Controller
         if (!empty($categorys)) {
             foreach ($categorys as $category) {
                 if ($category->typepage == 1) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('vinh-danh') . ">" . $category->catname . "</a>";
+                    $str .= "<li class='leaf'>";
+                    $str .= " <a href=" . base_url('tuyen-dai-ly') . ">" . $category->catname . "</a>";
                     $str .= "<ul>";
                     $str .= $this->get_sub_list_category($category->id, $i = 0);
                     $str .= "</ul>";
                     $str .= "</li>";
                 } else if ($category->typepage == 2) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('thuong-vip') . ">" . $category->catname . "</a>";
+                    $str .= "<li class='leaf'>";
+                    $str .= " <a href=" . base_url('chi-nhanh') . ">" . $category->catname . "</a>";
                     $str .= "<ul>";
                     $str .= $this->get_sub_list_category($category->id, $i = 0);
                     $str .= "</ul>";
                     $str .= "</li>";
                 } else if ($category->typepage == 3) {
-                    $str .= "<li>";
+                    $str .= "<li class='leaf'>";
                     $str .= " <a href=" . base_url('lien-he') . ">" . $category->catname . "</a>";
                     $str .= "<ul>";
                     $str .= $this->get_sub_list_category($category->id, $i = 0);
                     $str .= "</ul>";
                     $str .= "</li>";
-                } else if ($category->typepage == 4) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('hoi-dap') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 5) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('chinh-sach') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 6) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url($category->seolink . '-' . $category->id) . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
                 } else if ($category->typepage == 0) {
-                    $str .= "<li>";
+                    $str .= "<li class='leaf'>";
                     $str .= " <a href=" . base_url('danh-muc/' . $category->seolink . '-' . $category->id) . ">" . $category->catname . "</a>";
                     $str .= "<ul>";
                     $str .= $this->get_sub_list_category($category->id, $i = 0);
                     $str .= "</ul>";
                     $str .= "</li>";
                 }
-
             }
         }
-        if (!empty($categoryfaq)) {
-            foreach ($categoryfaq as $category) {
-                if ($category->typepage == 1) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('vinh-danh') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 2) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('thuong-vip') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 3) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('lien-he') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 4) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('hoi-dap') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 5) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('chinh-sach') . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 6) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url($category->seolink . '-' . $category->id) . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                } else if ($category->typepage == 0) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('danh-muc/' . $category->seolink . '-' . $category->id) . ">" . $category->catname . "</a>";
-                    $str .= "<ul>";
-                    $str .= $this->get_sub_list_category_faq($category->id, $i = 0);
-                    $str .= "</ul>";
-                    $str .= "</li>";
-                }
-            }
-        }
+        
         return $str;
     }
 
@@ -289,31 +223,19 @@ Class MY_Controller extends CI_Controller
         if (!empty($sub_categorys)) {
             foreach ($sub_categorys as $sub_category) {
                 if ($sub_category->typepage == 1) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('vinh-danh') . ">" . $sub_category->catname . "</a>";
+                    $str .= "<li class='leaf'>";
+                    $str .= " <a href=" . base_url('tuyen-dai-ly') . ">" . $sub_category->catname . "</a>";
                     $str .= "<ul>";
                 } else if ($sub_category->typepage == 2) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('thuong-vip') . ">" . $sub_category->catname . "</a>";
+                    $str .= "<li class='leaf'>";
+                    $str .= " <a href=" . base_url('chi-nhanh') . ">" . $sub_category->catname . "</a>";
                     $str .= "<ul>";
                 } else if ($sub_category->typepage == 3) {
                     $str .= "<li>";
                     $str .= " <a href=" . base_url('lien-he') . ">" . $sub_category->catname . "</a>";
                     $str .= "<ul>";
-                } else if ($sub_category->typepage == 4) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('hoi-dap') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 5) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('chinh-sach') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 6) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url($sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
                 } else if ($sub_category->typepage == 0) {
-                    $str .= "<li>";
+                    $str .= "<li class='leaf'>";
                     $str .= " <a href=" . base_url('danh-muc/' . $sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
                     $str .= "<ul>";
                 }
@@ -321,31 +243,19 @@ Class MY_Controller extends CI_Controller
                 if (!empty($sub_category_con)) {
                     foreach ($sub_category_con as $sub_category) {
                         if ($sub_category->typepage == 1) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('vinh-danh') . ">" . $sub_category->catname . "</a>";
+                            $str .= "<li class='leaf'>";
+                            $str .= " <a href=" . base_url('tuyen-dai-ly') . ">" . $sub_category->catname . "</a>";
                             $str .= "<li>";
                         } else if ($sub_category->typepage == 2) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('thuong-vip') . ">" . $sub_category->catname . "</a>";
+                            $str .= "<li class='leaf'>";
+                            $str .= " <a href=" . base_url('chi-nhanh') . ">" . $sub_category->catname . "</a>";
                             $str .= "<li>";
                         } else if ($sub_category->typepage == 3) {
-                            $str .= "<li>";
+                            $str .= "<li class='leaf'>";
                             $str .= " <a href=" . base_url('lien-he') . ">" . $sub_category->catname . "</a>";
                             $str .= "<li>";
-                        } else if ($sub_category->typepage == 4) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('hoi-dap') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 5) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('chinh-sach') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 6) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url($sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
                         } else if ($sub_category->typepage == 0) {
-                            $str .= "<li>";
+                            $str .= "<li class='leaf'>";
                             $str .= " <a href=" . base_url('danh-muc/' . $sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
                             $str .= "</li>";
                         }
@@ -364,88 +274,7 @@ Class MY_Controller extends CI_Controller
         return $str;
     }
 
-    function get_sub_list_category_faq($category_ids, $i = 0)
-    {
-        $str = "";
-        $sub_categorys = $this->category_model->get_subcategory_faq($category_ids);
-        //kiem tra get subcategory co ton ai hay
-        if (!empty($sub_categorys)) {
-            foreach ($sub_categorys as $sub_category) {
-                if ($sub_category->typepage == 1) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('vinh-danh') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 2) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('thuong-vip') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 3) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('lien-he') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 4) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('hoi-dap') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 5) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('chinh-sach') . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 6) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url($sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                } else if ($sub_category->typepage == 0) {
-                    $str .= "<li>";
-                    $str .= " <a href=" . base_url('danh-muc/' . $sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
-                    $str .= "<ul>";
-                }
-                $sub_category_con = $this->category_model->get_subcategory_faq($sub_category->id);
-                if (!empty($sub_category_con)) {
-                    foreach ($sub_category_con as $sub_category) {
-                        if ($sub_category->typepage == 1) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('vinh-danh') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 2) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('thuong-vip') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 3) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('lien-he') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 4) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('hoi-dap') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 5) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('chinh-sach') . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 6) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url($sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
-                            $str .= "<li>";
-                        } else if ($sub_category->typepage == 0) {
-                            $str .= "<li>";
-                            $str .= " <a href=" . base_url('danh-muc/' . $sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
-                            $str .= "</li>";
-                        }
-                    }
-                }
-                $str .= "</ul>";
-                $str .= "</li>";
-
-
-                if ($sub_category->id) {
-                    $str .= $this->get_sub_list_category_faq($sub_category->id, $i++);
-                }
-            }
-
-        }
-        return $str;
-    }
+    
 
     function get_list_category_footer()
     {

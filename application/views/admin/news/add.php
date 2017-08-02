@@ -86,9 +86,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none">
                             <div class="row">
-                                <label class="col-sm-2 control-label">Hiển thị chính sách:</label>
+                                <label class="col-sm-2 control-label">Tuyển đại lý:</label>
 
                                 <div class="col-sm-3">
                                     <input type="checkbox" name="chinhsach" value="1">

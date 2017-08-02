@@ -63,6 +63,11 @@ Class System extends MY_Controller
                 'CSKH' => $this->input->post('cskh'),
                 'Zalo' => $this->input->post('Zalo'),
                  'sign' => $this->input->post('sign'),
+                'titleDaily' => $this->input->post('dailytitle'),
+                'Daily' => $this->input->post('daily'),
+                'Map' => $this->input->post('map'),
+                'AddressTranfer' => $this->input->post('addresstranfer'),
+                 'Email' => $this->input->post('email'),
                 
             );
             if ($this->system_model->create($data)) {
@@ -143,6 +148,11 @@ Class System extends MY_Controller
                     'CSKH' => $this->input->post('cskh'),
                     'Zalo' => $this->input->post('Zalo'),
                     'sign' => $this->input->post('sign'),
+                    'titleDaily' => $this->input->post('dailytitle'),
+                    'Daily' => $this->input->post('daily'),
+                    'Map' => $this->input->post('map'),
+                    'AddressTranfer' => $this->input->post('addresstranfer'),
+                    'Email' => $this->input->post('email'),
                 );
                 $data1=array_merge($data,$logo, $bannerHome, $imageTranfer,$logobank);
                 move_uploaded_file($file_tmp, "public/uploads/adv/" . $file_name);

@@ -40,40 +40,18 @@
                     <li><a href="<?php echo admin_url("category/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
                 </ul>
             </li>
+           
+            
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Danh mục FAQ</span>
+                    <i class="fa fa-dashboard"></i> <span>Chi nhánh</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo admin_url("category/listfaq") ?>"><i class="fa fa-circle-o"></i> Danh sách</a></li>
-                    <li><a href="<?php echo admin_url("category/addfaq") ?>"><i class="fa fa-circle-o"></i> Thêm mới danh mục FAQ</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Vinh danh</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="<?php echo admin_url("victory") ?>"><i class="fa fa-circle-o"></i> Danh sách</a></li>
-                    <li><a href="<?php echo admin_url("victory/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Thưởng vip</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="<?php echo admin_url("bonusvip") ?>"><i class="fa fa-circle-o"></i> Danh sách</a></li>
-                    <li><a href="<?php echo admin_url("bonusvip/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới </a></li>
+                    <li><a href="<?php echo admin_url("chinhanh") ?>"><i class="fa fa-circle-o"></i> Danh sách</a></li>
+                    <li><a href="<?php echo admin_url("chinhanh/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới </a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -88,18 +66,7 @@
                     <li><a href="<?php echo admin_url("news/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới </a></li>
                 </ul>
             </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Hỏi đáp</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="<?php echo admin_url("faq") ?>"><i class="fa fa-circle-o"></i> Danh sách</a></li>
-                    <li><a href="<?php echo admin_url("faq/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới </a></li>
-                </ul>
-            </li>
+            
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-dashboard"></i> <span>Quảng cáo</span>

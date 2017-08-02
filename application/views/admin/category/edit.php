@@ -45,13 +45,9 @@
                                     <div class="col-sm-3">
                                         <select class="form-control" name="typepage">
                                             <option value="0" <?php if($info->typepage == 0){ echo "selected"; } ?>>Tin tức</option>
-                                            <option value="1" <?php if($info->typepage == 1){ echo "selected"; } ?>>Vinh danh</option>
-                                            <option value="2" <?php if($info->typepage == 2){ echo "selected"; } ?>>Thưởng vip</option>
+                                            <option value="1" <?php if($info->typepage == 1){ echo "selected"; } ?>>Tuyển đại lý</option>
+                                            <option value="2" <?php if($info->typepage == 2){ echo "selected"; } ?>>Chi nhánh</option>
                                             <option value="3" <?php if($info->typepage == 3){ echo "selected"; } ?>>Liên hệ</option>
-                                            <option value="4" <?php if($info->typepage == 4){ echo "selected"; } ?>>FAQ</option>
-                                            <option value="5" <?php if($info->typepage == 5){ echo "selected"; } ?>>Chính sách</option>
-                                            <option value="6" <?php if($info->typepage == 6){ echo "selected"; } ?>>Hướng dẫn</option>
-                                            <option value="7" <?php if($info->typepage == 7){ echo "selected"; }?>>Vòng quay vip</option>
                                         </select>
                                     </div>
                                 </div>

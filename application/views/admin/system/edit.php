@@ -95,6 +95,46 @@
                         </div>
                          <div class="form-group">
                             <div class="row">
+                                <label class="col-sm-2 control-label">sologant:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="sologant" value="<?php echo $info->sologant ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Tiêu đề đại lý:</label>
+                                <div class="col-sm-8">
+                                     <input type="text" class="form-control" name="dailytitle" value="<?php echo $info->titleDaily ?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Bản đồ:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="map" value="<?php echo $info->Map ?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Địa chỉ giao dịch:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="addresstranfer" value="<?php echo $info->AddressTranfer ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Email:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="email" value="<?php echo $info->Email ?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="row">
                                 <label class="col-sm-2 control-label">Sign:</label>
 
                                 <div class="col-sm-8">
@@ -123,9 +163,10 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <label class="col-sm-2 control-label">sologant:</label>
+                                <label class="col-sm-2 control-label">Tuyển đại lý:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="sologant" value="<?php echo $info->sologant ?>">
+                                     <textarea id="daily" name="daily" rows="20" cols="80"><?php echo $info->Daily ?>
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
@@ -244,6 +285,7 @@
         CKEDITOR.replace('address');
         CKEDITOR.replace('sign');
         CKEDITOR.replace('bank');
+        CKEDITOR.replace('daily');
     });
     function readURL(input) {
         if (input.files && input.files[0]) {
