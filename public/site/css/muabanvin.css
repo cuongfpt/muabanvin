@@ -163,10 +163,10 @@ ul:not(.contextual-links) {
     margin: 0 auto;
 }
 #section-footer {
-    background-color: #dfdfdf;
+    background-color: #22126A;
     color: #232D37;
     padding: 20px 0 0;
-    border-top: 2px solid #CD2323;
+    margin-top: 20px;
 }
 iframe {
     border: none;
@@ -322,9 +322,17 @@ h1.parallex-slider-title.white {
 #block-system-main #first-time {
     display: none;
 }
-.default #section-extra-bottom-1, .default #section-extra-bottom-4 {
+.default #section-extra-bottom-1 {
     /*background: url(../images/bg-facts.png) no-repeat scroll 50% center rgba(0,0,0,0);*/
-    background-color: #CD2323 !important;
+  background: url(../images/bg1.png) no-repeat scroll  0px 0px rgba(0,0,0,0); !important;
+  width: 100%;
+  float: left;
+  height: 554px;
+    color: #fff;
+    /*margin-top: 40px;*/
+}
+.default #section-extra-bottom-4 {
+    background: #fff;
     color: #fff;
     /*margin-top: 40px;*/
 }

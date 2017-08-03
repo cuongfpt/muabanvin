@@ -50,3 +50,12 @@
         </div>
     </section>
 </div>
+<script type="text/javascript">
+    $(".menu-toggle").click(function(){
+        $("body").addClass('menu-open');
+    });
+     $(".region-navigation").click(function(){
+        $("body").removeClass('menu-open');
+    });
+   
+</script>
