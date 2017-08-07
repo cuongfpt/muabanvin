@@ -68,6 +68,8 @@ Class System extends MY_Controller
                 'Map' => $this->input->post('map'),
                 'AddressTranfer' => $this->input->post('addresstranfer'),
                  'Email' => $this->input->post('email'),
+                   'BannerText' => $this->input->post('bannerText'),
+                     'BannerText1' => $this->input->post('bannerText1'),
                 
             );
             if ($this->system_model->create($data)) {
@@ -101,12 +103,13 @@ Class System extends MY_Controller
             $file_tmp_logobank = $_FILES['imageslogobank']['tmp_name'];
             $file_ext = strtolower(end(explode('.', $_FILES['images']['name'])));
             $expensions = array("jpeg", "jpg", "png");
-            if (in_array($file_ext, $expensions) === false) {
+           if (in_array($file_ext, $expensions) === false) {
                 $this->session->set_flashdata('message', 'Không chấp nhận định dạng ảnh có đuôi này, mời bạn chọn JPEG hoặc PNG.');
             }
             if ($file_size > 2097152) {
                 $this->session->set_flashdata('message', 'Kích cỡ file nên là 2 MB');
             }
+       
             if ($_FILES['images']['name'] != "") {
                         $logo =  array('logo' => $_FILES['images']['name']);
                        }
@@ -153,9 +156,14 @@ Class System extends MY_Controller
                     'Map' => $this->input->post('map'),
                     'AddressTranfer' => $this->input->post('addresstranfer'),
                     'Email' => $this->input->post('email'),
+                      'BannerText' => $this->input->post('bannerText'),
+                     'BannerText1' => $this->input->post('bannerText1'),
                 );
                 $data1=array_merge($data,$logo, $bannerHome, $imageTranfer,$logobank);
                 move_uploaded_file($file_tmp, "public/uploads/adv/" . $file_name);
+                move_uploaded_file($file_tmp_banner, "public/uploads/adv/" . $file_name_banner);
+                move_uploaded_file($file_tmp_tranfer, "public/uploads/adv/" . $file_name_tranfer);
+                move_uploaded_file($file_tmp_logobank, "public/uploads/adv/" . $file_name_logobank);
                 if ($this->system_model->update($id, $data1)) {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', '<label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Cập nhật thành công</label>');

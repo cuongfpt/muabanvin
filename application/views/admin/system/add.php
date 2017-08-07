@@ -93,22 +93,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">Tiêu đề đại lý:</label>
-                                <div class="col-sm-8">
-                                     <input type="text" class="form-control" name="dailytitle">
-                                </div>
-                            </div>
-                        </div>
-                          <div class="form-group">
-                            <div class="row">
-                                <label class="col-sm-2 control-label">sologant:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="sologant">
-                                </div>
-                            </div>
-                        </div>
+                        
                          <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">Bản đồ:</label>
@@ -130,6 +115,25 @@
                                 <label class="col-sm-2 control-label">Email:</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Tiêu đề đại lý:</label>
+                                <div class="col-sm-8">
+                                  <textarea id="dailytitle" name="dailytitle" rows="20" cols="80">
+                                 </textarea>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">sologant:</label>
+                                <div class="col-sm-8">
+                                 <textarea id="sologant" name="sologant" rows="20" cols="80">
+                                    </textarea>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -177,6 +181,24 @@
                                 <label class="col-sm-2 control-label">Ngân hàng:</label>
                                 <div class="col-sm-8">
                                      <textarea id="bank" name="bank" rows="20" cols="80">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Giới thiệu:</label>
+                                <div class="col-sm-8">
+                                     <textarea id="bannerText" name="bannerText" rows="20" cols="80">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Bảng giá:</label>
+                                <div class="col-sm-8">
+                                     <textarea id="bannerText1" name="bannerText1" rows="20" cols="80">
                                     </textarea>
                                 </div>
                             </div>
@@ -257,9 +279,14 @@
         // instance, using default configuration.
         CKEDITOR.replace('guidtranfer');
         CKEDITOR.replace('address');
-		CKEDITOR.replace('sign');
+        CKEDITOR.replace('sign');
         CKEDITOR.replace('bank');
-         CKEDITOR.replace('daily');
+        CKEDITOR.replace('daily');
+        CKEDITOR.replace('dailytitle');
+           CKEDITOR.replace('sologant');
+        CKEDITOR.replace('bannerText');
+        CKEDITOR.replace('bannerText1');
+      
     });
    function readURL(input,id) {
 if (input.files && input.files[0])

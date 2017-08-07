@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="hidden-lg hidden-md col-xs-3 col-sm-3"><span class="fa fa-bars menu-toggle"></span></div>
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><a href="/" class="site-logo active">
-                    <img src="<?php echo public_url("uploads/adv/".$logo) ?>" alt=""></a>
+                    <img src="<?php echo public_url("uploads/adv/".$logo) ?>" alt="" style="width:105px;"></a>
                 </div>    
                 <div class="region region-navigation col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div id="block-dexp-menu-dexp-menu-block" class="block block-dexp-menu">

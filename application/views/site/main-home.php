@@ -7,18 +7,70 @@
  <?php $this->load->view('site/header') ?>
  <div class="dexp-body-inner default">
  <section class="dexp-section" id="section-banner">
-<ul class="bxslider">
-   <?php if (!empty($list2)) :?>
+
+<div class="dexp-container">
+    <div class="row">
+        <div class="region region-banner col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div id="block-block-112" class="block block-block">
+<div class="content">
+<div class="col-md-6">
+  <?php echo $bannerText?>
+</div>
+<div class="col-md-6">
+<hr>
+  <?php echo $bannerText1?>
+</div>
+</div>
+</div>
+<div id="block-dexp-layerslider-dexp-layerslider-block-1" class="block block-dexp-layerslider hidden-xs">
+<div class="content">
+<div id="dexp-layerslider" class="layerslider-bannercontainer tp-simpleresponsive" style="max-height: 328px; overflow: visible;">
+<div id="slider1" class="layerslider-banner">
+  <ul> 
+    <?php if (!empty($list2)) :?>
       <?php foreach ($list2 as $row): ?>
-                <li><img src="<?php echo public_url('uploads/adv/right/' . $row->images)?>" /></li>
-        <?php endforeach ?>
-    <?php endif ?>     
-</ul>
+   <li data-transition="slidedown"> 
+     <div class="tp-caption News-Title" 
+        data-x="10"  
+        data-y="20"  
+        data-speed="500"
+         data-start="1000"
+        data-easing="easeOutExpo"><?php echo $bannerText ?></div>
+         <div class="tp-caption News-Title" 
+        data-x="750" data-y="20"
+         data-speed="500" 
+         data-start="1000" 
+         data-easing="easeOutExpo"
+          ><?php echo $bannerText1 ?></div>
+   </li>
+   <?php endforeach ?>
+    <?php endif ?>    
+   
+  </ul> 
+ </div>
+
+</div>
+</div>  
+</div>
+    </div>
+  </div>
 </section>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $('.bxslider').bxSlider();
-    });
+    // $(document).ready(function(){
+    //     $('.bxslider').bxSlider();
+    // });
+    jQuery(document).ready(function() { 
+   jQuery("#slider1").revolution({
+      sliderType:"standard",
+      sliderLayout:"auto",
+      delay:9000,
+      navigation: {
+          arrows:{enable:true} 
+      }, 
+      gridwidth:1230,
+      gridheight:720 
+    }); 
+}); 
 </script>
      <section class="dexp-section" id="section-features">
         <div class="container">

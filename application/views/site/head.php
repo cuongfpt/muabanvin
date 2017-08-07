@@ -11,9 +11,10 @@
 <link type="text/css" rel="stylesheet" href="<?php echo public_url("/site/css/bootstrap.min.css") ?>">
 <link type="text/css" rel="stylesheet" href="<?php echo public_url("/site/css/jquery.bxslider.css") ?>">
 <link type="text/css" rel="stylesheet" href="<?php echo public_url("/site/css/font-awesome.min.css") ?>">
-
 <link type="text/css" rel="stylesheet" href="<?php echo public_url("/site/css/muabanvin.css") ?>">
-
+<link type="text/css" rel="stylesheet" href="<?php echo public_url("/site/css/settings.css") ?>">
 <script src="<?php echo public_url('site') ?>/js/jquery-1.9.1.js"></script>
 <script src="<?php echo public_url('site') ?>/js/jquery.bxslider.js"></script>
 <script src="<?php echo public_url('site') ?>/js/jquery.simplePagination.js"></script>
+<script src="<?php echo public_url('site') ?>/js/jquery.themepunch.plugins.min.js"></script>
+<script src="<?php echo public_url('site') ?>/js/jquery.themepunch.revolution.min.js"></script>

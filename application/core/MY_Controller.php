@@ -76,6 +76,8 @@ Class MY_Controller extends CI_Controller
                $this->data['daily'] = $item->Daily;
                $this->data['map'] = $item->Map;
                $this->data['email'] = $item->Email;
+                $this->data['bannerText'] = $item->BannerText;
+                 $this->data['bannerText1'] = $item->BannerText1;
             }
             break;
             }
