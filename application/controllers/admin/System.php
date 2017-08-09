@@ -67,9 +67,10 @@ Class System extends MY_Controller
                 'Daily' => $this->input->post('daily'),
                 'Map' => $this->input->post('map'),
                 'AddressTranfer' => $this->input->post('addresstranfer'),
-                 'Email' => $this->input->post('email'),
-                   'BannerText' => $this->input->post('bannerText'),
-                     'BannerText1' => $this->input->post('bannerText1'),
+                'Email' => $this->input->post('email'),
+                'BannerText' => $this->input->post('bannerText'),
+                'BannerText1' => $this->input->post('bannerText1'),
+                'TextRun' => $this->input->post('textrun'),
                 
             );
             if ($this->system_model->create($data)) {
@@ -156,8 +157,9 @@ Class System extends MY_Controller
                     'Map' => $this->input->post('map'),
                     'AddressTranfer' => $this->input->post('addresstranfer'),
                     'Email' => $this->input->post('email'),
-                      'BannerText' => $this->input->post('bannerText'),
-                     'BannerText1' => $this->input->post('bannerText1'),
+                    'BannerText' => $this->input->post('bannerText'),
+                    'BannerText1' => $this->input->post('bannerText1'),
+                    'TextRun' => $this->input->post('textrun'),
                 );
                 $data1=array_merge($data,$logo, $bannerHome, $imageTranfer,$logobank);
                 move_uploaded_file($file_tmp, "public/uploads/adv/" . $file_name);

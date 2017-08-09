@@ -15,9 +15,8 @@
     </div>
 </div>
 <?php $this->load->view('site/footer') ?>
-<div style="position: fixed; bottom: 50px; right: 50px; display: none" type="button" value="Click" id="scrolltop">
-  <img src="top.png" >
-</div>
+  <?php $this->load->view('site/livechat') ?>
+<button onclick="scrolltop()" id="myBtn" title="Go to top" style="display: block;">Top</button>
 <script language="javascript">
             function scrolltop() 
             {

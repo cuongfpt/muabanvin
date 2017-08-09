@@ -118,6 +118,15 @@
                                 </div>
                             </div>
                         </div>
+                         <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label">Quảng cáo đầu trang:</label>
+                                <div class="col-sm-8">
+                                  <textarea id="textrun" name="textrun" rows="20" cols="80">
+                                 </textarea>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <div class="row">
                                 <label class="col-sm-2 control-label">Tiêu đề đại lý:</label>
@@ -286,7 +295,7 @@
            CKEDITOR.replace('sologant');
         CKEDITOR.replace('bannerText');
         CKEDITOR.replace('bannerText1');
-      
+      CKEDITOR.replace('textrun');
     });
    function readURL(input,id) {
 if (input.files && input.files[0])

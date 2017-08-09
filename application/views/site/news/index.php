@@ -12,7 +12,7 @@
         <div class="region region-breadcrumb col-xs-12 col-sm-12 col-md-5 col-lg-5">
           <div id="block-dexp-page-elements-dexp-page-elements-breadcrumb" class="block block-dexp-page-elements">
             <div class="content">
-              <h2 class="element-invisible">Bạn đang ở đây</h2><div class="breadcrumb"><a href="/">Nhà</a></div>
+              <h2 class="element-invisible">Bạn đang ở đây</h2><div class="breadcrumb"><a href="/">Home</a></div>
             </div>
           </div>
         </div>

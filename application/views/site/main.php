@@ -15,5 +15,6 @@
     </div>
 </div>
 <?php $this->load->view('site/footer') ?>
+  <?php $this->load->view('site/livechat') ?>
 </body>
 </html>

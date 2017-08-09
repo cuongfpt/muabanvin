@@ -53,10 +53,10 @@ Class MY_Controller extends CI_Controller
             $this->data['list3'] = $list3;
             foreach($list3 as $item)
             {
-                  $this->data['linkface'] = $item->linkface;
+                $this->data['linkface'] = $item->linkface;
                 $this->data['codeGA'] = $item->codeGA;
                 $this->data['titlePage'] = $item->titlePage;
-                 $this->data['guidTranfer'] = $item->guidTranfer;
+                $this->data['guidTranfer'] = $item->guidTranfer;
                 $this->data['keyword'] = $item->keyword;
                 $this->data['metaDescription'] = $item->metaDescription;
                 $this->data['linkfacegroup'] = $item->linkfacegroup;
@@ -70,14 +70,15 @@ Class MY_Controller extends CI_Controller
                 $this->data['logobank'] = $item->logobank;  
                 $this->data['CSKH'] = $item->CSKH;  
                 $this->data['Zalo'] = $item->Zalo;
-				$this->data['sign'] = $item->sign;
-               $this->data['AddressTranfer'] = $item->AddressTranfer;
-               $this->data['titleDaily'] = $item->titleDaily;
-               $this->data['daily'] = $item->Daily;
-               $this->data['map'] = $item->Map;
-               $this->data['email'] = $item->Email;
+                $this->data['sign'] = $item->sign;
+                $this->data['AddressTranfer'] = $item->AddressTranfer;
+                $this->data['titleDaily'] = $item->titleDaily;
+                $this->data['daily'] = $item->Daily;
+                $this->data['map'] = $item->Map;
+                $this->data['email'] = $item->Email;
                 $this->data['bannerText'] = $item->BannerText;
-                 $this->data['bannerText1'] = $item->BannerText1;
+                $this->data['bannerText1'] = $item->BannerText1;
+                $this->data['textRun'] = $item->TextRun;
             }
             break;
             }

@@ -8,5 +8,6 @@
                 <?php $this->load->view($temp, $this->data); ?>
             </div>
             <?php $this->load->view('site/footer') ?>
+              <?php $this->load->view('site/livechat') ?>
     </body>
 </html>
