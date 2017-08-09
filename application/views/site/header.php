@@ -42,7 +42,7 @@
                 <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="/" class="site-logo active">
                     <img src="<?php echo public_url("uploads/adv/".$logo) ?>" alt="" style="width:105px;"></a>
                 </div>    
-                <div class="region region-navigation col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <div class="region region-navigation col-xs-12 col-sm-12 col-md-10 col-lg-10">
                     <div id="block-dexp-menu-dexp-menu-block" class="block block-dexp-menu">
                         <div class="content">
                             <div class="dexp-dropdown">

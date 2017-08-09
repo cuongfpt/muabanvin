@@ -66,6 +66,19 @@
                     <li><a href="<?php echo admin_url("news/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới </a></li>
                 </ul>
             </li>
+            
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Quảng cáo</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?php echo admin_url("adv") ?>"><i class="fa fa-circle-o"></i> Danh sách</a></li>
+                    <li><a href="<?php echo admin_url("adv/add") ?>"><i class="fa fa-circle-o"></i> Thêm mới </a></li>
+                </ul>
+            </li>
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-dashboard"></i> <span>Hệ thống</span>

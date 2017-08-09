@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800");
+﻿@import url("http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
 body {
     color: #666666;
@@ -39,7 +39,7 @@ body.boxed .region-top {
   width:100%;
   position:relative;
   padding:0;
-  background: url("../images/1200x328_0.jpg") no-repeat; 
+     background: url("../images/1200x328_0.jpg") no-repeat; 
         background-position: center center;
         background-size: 100% 100%;
         display: block;
@@ -51,62 +51,7 @@ body.boxed .region-top {
   position:relative;
 
 }
-body.bg1,
-span.bg1 {
-    background: url("../images/bg/bg1.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg2,
-span.bg2 {
-    background: url("../images/bg/bg2.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg3,
-span.bg3 {
-    background: url("../images/bg/bg3.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg4,
-span.bg4 {
-    background: url("../images/bg/bg4.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg5,
-span.bg5 {
-    background: url("../images/bg/bg5.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg6,
-span.bg6 {
-    background: url("../images/bg/bg6.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg7,
-span.bg7 {
-    background: url("../images/bg/bg7.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg8,
-span.bg8 {
-    background: url("../images/bg/bg8.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg9,
-span.bg9 {
-    background: url("../images/bg/bg9.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg10,
-span.bg10 {
-    background: url("../images/bg/bg10.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg11,
-span.bg11 {
-    background: url("../images/bg/bg11.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg12,
-span.bg12 {
-    background: url("../images/bg/bg12.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg13,
-span.bg13 {
-    background: url("../images/bg/bg13.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
-body.bg14,
-span.bg14 {
-    background: url("../images/bg/bg14.png") repeat scroll 0 0 rgba(0,0,0,0);
-}
+
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
@@ -343,7 +288,6 @@ h1.parallex-slider-title.white {
   background: url(../images/bg1.png) no-repeat scroll  0px 0px rgba(0,0,0,0); !important;
   width: 100%;
   float: left;
-  height: 554px;
     color: #fff;
     /*margin-top: 40px;*/
 }
@@ -693,7 +637,7 @@ body.rtl .alert .close {
         text-align: right;
     }
     #section-header .dexp-dropdown >ul >li {
-        margin: 0 ;
+        margin: 0;
         padding: 0;
     }
     #section-header .dexp-dropdown >ul li ul {
@@ -3272,6 +3216,7 @@ h3.block-title {
     font-family: "Raleway";
     margin-top: 30px;
     margin-bottom: 0px;
+text-transform:uppercase;
 }
 .main-headline p.sub-block-title {
     font-size: 13px;

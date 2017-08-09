@@ -228,3 +228,14 @@
       </div>
     </body>
   </html>
+<script type="text/javascript">
+    $(document).ready(function(){
+  $('#latest-projects-block').bxSlider({
+    slideWidth: 300,
+    minSlides: 2,
+    maxSlides: 5,
+    slideMargin: 10,
+    pager:false
+  });
+});
+</script>
