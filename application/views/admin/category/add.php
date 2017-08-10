@@ -44,7 +44,7 @@
                                             <option value="1">Tuyển đại lý</option>
                                             <option value="2">Chi nhánh</option>
                                             <option value="3">Liên hệ</option>
-                                           
+                                           <option value="4">GiftCode</option>
                                         </select>
                                     </div>
                                 </div>

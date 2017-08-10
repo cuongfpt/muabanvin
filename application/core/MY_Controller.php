@@ -204,7 +204,7 @@ Class MY_Controller extends CI_Controller
                     $str .= $this->get_sub_list_category($category->id, $i = 0);
                     $str .= "</ul>";
                     $str .= "</li>";
-                } else if ($category->typepage == 0) {
+                } else  {
                     $str .= "<li class='leaf'>";
                     $str .= " <a href=" . base_url('danh-muc/' . $category->seolink . '-' . $category->id) . ">" . $category->catname . "</a>";
                     $str .= "<ul>";
@@ -212,6 +212,7 @@ Class MY_Controller extends CI_Controller
                     $str .= "</ul>";
                     $str .= "</li>";
                 }
+
             }
         }
         
@@ -257,7 +258,7 @@ Class MY_Controller extends CI_Controller
                             $str .= "<li class='leaf'>";
                             $str .= " <a href=" . base_url('lien-he') . ">" . $sub_category->catname . "</a>";
                             $str .= "<li>";
-                        } else if ($sub_category->typepage == 0) {
+                        } else  {
                             $str .= "<li class='leaf'>";
                             $str .= " <a href=" . base_url('danh-muc/' . $sub_category->seolink . '-' . $sub_category->id) . ">" . $sub_category->catname . "</a>";
                             $str .= "</li>";

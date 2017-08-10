@@ -48,9 +48,9 @@
                             <div class="dexp-dropdown">
                                 <ul class="menu">
                                    <?php echo $menu_list ?>
-                                   <li><a href="https://vinplay.com/vinplay.apk"><img src="public/site/images/app-apk.png"></a></li>
-                                   <li><a href="itms-services://?action=download-manifest&url=https://vinplay.com/download/ios/vinplay.plist"><img src="public/site/images/app-ios.png"></a></li>
-                                   <li><a href="https://play.google.com/store/apps/details?id=com.vinotp"><img src="public/site/images/app-otp.png"></a></li>
+                                   <li><a href="https://vinplay.com/vinplay.apk"><img src="<?php echo public_url('site/images/app-apk.png') ?>"></a></li>
+                                   <li><a href="itms-services://?action=download-manifest&url=https://vinplay.com/download/ios/vinplay.plist"><img src="<?php echo public_url('site/images/app-ios.png') ?>"></a></li>
+                                   <li><a href="https://play.google.com/store/apps/details?id=com.vinotp"><img src="<?php echo public_url('site/images/app-otp.png') ?>"></a></li>
                                 </ul>
                             </div>
                         </div>

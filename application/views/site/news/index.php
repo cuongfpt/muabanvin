@@ -1,11 +1,14 @@
 
+   <?php if (!empty($info)): ?>
+                            <?php foreach ($info as $row): ?>
+
   <section class="dexp-section" id="section-page-title">
     <div class="container">
       <div class="row">
         <div class="region region-page-title col-xs-12 col-sm-12 col-md-7 col-lg-7">
           <div id="block-dexp-page-elements-dexp-page-elements-page-title" class="block block-dexp-page-elements">
             <div class="content">
-              <div class="page_title_no_sub"><h1 class="page_title"><?php echo $info->title ?></h1></div>
+              <div class="page_title_no_sub"><h1 class="page_title"><?php echo $row->title ?></h1></div>
             </div>
           </div>
         </div>
@@ -25,8 +28,12 @@
         <div class="region region-content col-xs-12 col-sm-12 col-md-9 col-lg-9">
           <div class="tabs"></div><div id="block-system-main" class="block block-system">
           <div class="content">
-            <p><b><?php echo $info->description ?></b></p>
-            <p><?php echo $info->content ?></p>
+            <p><b><?php echo $row->description ?></b></p>
+              <?php if($row->typepage=="4"): ?>
+              <div class="giftcode"><?php echo $row->content ?></div>
+            <?php else :?>
+              <p><?php echo $row->content ?></p>
+            <?php endif?>
           </div>
         </div>
       </div>
@@ -46,3 +53,5 @@
     </div>
   </div>
 </section>
+<?php endforeach?>
+<?php endif?>

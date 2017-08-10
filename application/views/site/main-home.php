@@ -186,17 +186,7 @@
         </div>
       </section>
       <section class="dexp-section" id="section-extra-bottom-3">
-        <div class="container">
-          <div class="row">
-            <div class="region region-extra-bottom3 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div id="block-block-85" class="block block-block stats-has-border" style="padding:50px 0 0 0">
-                <div class="content">
-                  <p><img alt="" src="<?php echo public_url("uploads/adv/" . $bannerHome) ?>" style="width: 1366px; height: 252px;"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <p><img alt="" src="<?php echo public_url("uploads/adv/" . $bannerHome) ?>"></p>
       </section>
       <section class="dexp-section" id="section-extra-bottom-4">
         <div class="container">

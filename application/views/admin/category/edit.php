@@ -48,6 +48,7 @@
                                             <option value="1" <?php if($info->typepage == 1){ echo "selected"; } ?>>Tuyển đại lý</option>
                                             <option value="2" <?php if($info->typepage == 2){ echo "selected"; } ?>>Chi nhánh</option>
                                             <option value="3" <?php if($info->typepage == 3){ echo "selected"; } ?>>Liên hệ</option>
+                                              <option value="4" <?php if($info->typepage == 4){ echo "selected"; } ?>>GiftCode</option>
                                         </select>
                                     </div>
                                 </div>

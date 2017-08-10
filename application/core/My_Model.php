@@ -272,7 +272,6 @@ class MY_Model extends CI_Model {
 	function get_category($parent = '-1')
 	{
 		$this->db->where('parent_id',$parent);
-        $this->db->where('type',0);
         $this->db->order_by('orderno','ASC');
 		$query = $this->db->get($this->table);
 		if($query->result())
@@ -285,7 +284,6 @@ class MY_Model extends CI_Model {
 	function get_subcategory($category_id)
 	{
 		$this->db->where('parent_id',$category_id);
-        $this->db->where('type',0);
         $this->db->order_by('orderno','ASC');
 		$query = $this->db->get($this->table);
 		if($query->result())

@@ -17,7 +17,8 @@ class News extends MY_Controller
         $last = end($this->uri->segments);
         if(preg_match_all('/\d+/', $last, $numbers))
             $id = end($numbers[0]);
-        $info = $this->news_model->get_info($id);
+        $info = $this->news_model->get_new_detail($id);
+
             $this->data['info'] = $info;
          /*$info_rate = $this->Rate_model->get_info_rate_by_newsID($id);
           $result_rate = $this->Rate_model->reportRate($id);
@@ -25,11 +26,14 @@ class News extends MY_Controller
          $this->data['info_rate'] = $info_rate;
         $this->data['result_rate'] = $result_rate;*/
       
-        $list = $this->news_model->get_list_news_other($id,$info->catId);
+       
+        foreach ($info as $item) {
+         $list = $this->news_model->get_list_news_other($id,$item->catId);
         $this->data['list'] = $list;
-            $this->data['meta_title'] = $info->titlePage;
-            $this->data['meta_keyword'] = $info->keyword;
-            $this->data['meta_description'] = $info->metaDescription;
+            $this->data['meta_title'] = $item->titlePage;
+            $this->data['meta_keyword'] = $item->keyword;
+            $this->data['meta_description'] = $item->metaDescription;
+            }
         $this->data['temp'] = 'site/news/index';
         $this->load->view('site/main-cat', $this->data);
     }

@@ -4155,3 +4155,80 @@ text-transform:uppercase;
     border-top-right-radius:10px;
     cursor:pointer;
 }
+.giftcode {
+    width: 100%;
+    float: left;
+  
+}
+.giftcode table  {
+    width: 100% !important;
+    float: left;
+    border: 1px solid #fff;
+}
+.giftcode table tr {
+    width: 100% !important;
+    float: left;
+}
+.giftcode table tr td:nth-child(1) {
+   background: #261772;
+   text-align: center;
+   color: #fff;
+   width:5%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}
+.giftcode table tr td:nth-child(2) {
+   background: #2348A3;
+   text-align: center;
+   color: #FFF800;
+   width:30%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}
+.giftcode table tr td:nth-child(3) {
+   background: #261772;
+   text-align: center;
+   color: #fff;
+   width:15%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}
+.giftcode table tr td:nth-child(4) {
+   background: #2348A3;
+   text-align: center;
+   color: #70DBFC;
+   width:20%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}
+.giftcode table tr td:nth-child(5) {
+   background: #261772;
+   text-align: center;
+   color: #fff;
+   width:15%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}
+.giftcode table tr td:nth-child(6) {
+   background: #2348A3;
+   text-align: center;
+   color: #FFF800;
+   width:15%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}
+.giftcode table tr td:nth-child(7) {
+   background: #261772;
+   text-align: center;
+   color: #fff;
+   width:15%;
+       height: 35px;
+    line-height: 35px;
+   float: left;
+}

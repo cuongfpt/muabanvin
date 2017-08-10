@@ -145,5 +145,20 @@ function searchNews(){
             return FALSE;
         }
     }
+     function get_new_detail($id)
+    {
+        $this->db->select('title,news.description,createTime,news.seoLink,news.id,news.images,ExpireDate,isActive,typepage,news.content,news.titlePage, news.keyword,news.metaDescription,news.catId')
+            ->from('news')
+            ->join('category', 'news.catId =category.id')
+            ->where('news.id', $id);
 
+        $query = $this->db->get();
+
+        if ($query->result()) {
+            return $query->result();
+        } else {
+            return FALSE;
+        }
+
+    }
 }
