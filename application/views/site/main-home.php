@@ -173,7 +173,7 @@
             <div class="region region-extra-bottom col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div id="block-block-84" class="block block-block main-headline" style="text-align:center">
                 <div class="content">
-                  <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                  <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin-top: 30px;margin-bottom: 20px">
                     <?php echo $guidTranfer ?>
                   </div>
                   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">

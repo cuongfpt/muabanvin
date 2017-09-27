@@ -21,7 +21,15 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$title1="";
-		
+		/* freshly copied from laravel.com */
+Mail::send('emails.welcome', $data, function($message)
+{
+  $message->from('us@example.com', 'Laravel');
+
+  $message->to('foo@example.com')->cc('bar@example.com');
+
+  $message->attach($pathToFile);
+});
 		$this->load->view('welcome_message');
 	}
 }

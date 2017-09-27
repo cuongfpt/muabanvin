@@ -103,7 +103,7 @@ Class Adv extends MY_Controller
                     'position' => $this->input->post('position'),
                     'orderno' => $this->input->post('orderno'),
                     'images' => $this->input->post('imagevalue'),
- 'status' => $this->input->post('status')
+        'status' => $this->input->post('status')
 
                 );
             }
